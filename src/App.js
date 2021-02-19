@@ -4,7 +4,6 @@ import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 import MarkerClusterGroup from 'react-leaflet-markercluster';
 
 const createClusterCustomIcon = (cluster) => {
-  console.log(cluster.getAllChildMarkers())
   return L.divIcon({
     html: `<span>${cluster.getChildCount()}</span>`,
     className: 'marker-cluster-custom',
